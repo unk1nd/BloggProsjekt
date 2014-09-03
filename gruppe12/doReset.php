@@ -40,7 +40,6 @@ $content .= "Brukernavn: $brukernavn<br>Passord: $passord<br><br>";
 $content .= "Du kan endre ditt passord på din profil ved innlogging.";
 $subject = "Nytt passord";
 $mailheader = "From: Gruppe12`s Blogg - Nytt passord\r\n"; 
-$mailheader .= "Reply-To: duuxman@gmail.com\r\n"; 
 $mailheader .= "Content-type: text/html; charset=utf8\r\n";
 mail($epost, $subject, $content, $mailheader) or die("Error!");
 
